@@ -1,0 +1,56 @@
+<h2>Записаться!</h2>
+<p>На этой странице вы сможете записаться к нам в Barber Shop</p>
+
+<form action="/visit" method="POST">
+  <div class="form-group">
+    <label >Ваше имя</label>
+    <input name="username" type="text" class="form-control" placeholder="Введите Ваше имя" value ="<%= @username %>">
+  </div>
+ 
+<div class="form-group">
+    <label >Ваш телефон</label>
+    <input name="phone" type="text" class="form-control" placeholder="Введите Ваш телефон" value ="<%= @phone %>">
+  </div>
+
+<div class="form-group">
+    <label >Когда Вас ждать?</label>
+    <input name="datetime" type="text" class="form-control" placeholder="Введите время и дату" value ="<%= @datetime %>">
+  </div>
+
+<div class="form-group">
+    <label >Ваш парикмахер:</label>
+    <select name="barber" class="form-control">
+      <option>...</option>
+      <option>Светлана Плескач</option>
+      <option>Ольга Шинкарик</option>
+      <option>Славентино Могучий</option>
+    </select>
+  </div>
+
+
+<div class="form-group">
+    <label >Цвет краски</label>
+  <select id="color" name="color">
+    <option value="#7bd148">Green</option>
+    <option value="#5484ed">Bold blue</option>
+    <option value="#a4bdfc">Blue</option>
+    <option value="#46d6db">Turquoise</option>
+    <option value="#7ae7bf">Light green</option>
+    <option value="#51b749">Bold green</option>
+    <option value="#fbd75b">Yellow</option>
+    <option value="#ffb878">Orange</option>
+    <option value="#ff887c">Red</option>
+    <option value="#dc2127">Bold red</option>
+    <option value="#dbadff">Purple</option>
+    <option value="#e1e1e1">Gray</option>
+  </select> 
+  </div>
+
+
+
+  <button type="submit" class="btn btn-primary">Записаться</button>
+</form>
+
+<script type="text/javascript">
+$('#color').simplecolorpicker();
+</script>
