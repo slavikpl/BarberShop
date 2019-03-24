@@ -21,9 +21,9 @@
     <label >Ваш парикмахер:</label>
     <select name="barber" class="form-control">
       <option>...</option>
-      <option>Светлана Плескач</option>
-      <option>Ольга Шинкарик</option>
-      <option>Славентино Могучий</option>
+      <option <%= @barber == "Светлана Плескач" ? "selected" : "" %>>Светлана Плескач</option>
+      <option <%= @barber == "Ольга Шинкарик" ? "selected" : "" %>>Ольга Шинкарик</option>
+      <option <%= @barber == "Славентино Могучий" ? "selected" : "" %>>Славентино Могучий</option>
     </select>
   </div>
 
